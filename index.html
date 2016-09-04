@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link href="less/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css"/>
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!--菜单控制按钮-->
+    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-content" type="button">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <a href="#"></a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-content">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#log-in" data-toggle="modal">LOG IN</a></li>
+          <li><a class="btn btn-warning signupbtn" id="sign-up" data-toggle="modal" href="#sign-in">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+<div class="main">
+  <div class="jumbo">
+    <div class="container cta">
+      <div class="row">
+        <div class="col-md-5 elem-center">
+          <h1>
+            <span> The easiest</span>
+            <span>graphic design tool</span>
+            <span>you'll ever use.</span>
+          </h1>
+          <p>Create highly engaging images without the help of a graphic designer.</p>
+          <button id="designbtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in" type="button">Design a Graphic Now</button>
+        </div>
+        <div class="col-md-7">
+          <div class="video-player">
+            <video class="snappa-video" src="http://fat.gfycat.com/BruisedWatchfulCockroach.mp4" type="video/mp4" autoplay loop></video>
+            <div class="videobtn">
+              <button id="playdemo" class="btn btn-outline" type="button">Watch 55s demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Featured in</p>
+            <div class="company-logo" style="width:16%;">
+              <img src="./img/logo_leadpages.svg" alt="leadpages"/>
+            </div>
+            <div class="company-logo" style="width:27%;">
+              <img src="./img/logo_quicksprout.svg" alt="quicksprout"/>
+            </div>
+            <div class="company-logo" style="width:14%;">
+              <img src="./img/logo_forbes.svg" alt="forbes"/>
+            </div>
+            <div class="company-logo" style="width:20%;">
+              <img src="./img/logo_inc.svg" alt="Inc."/>
+            </div>
+            <div class="company-logo" style="width:23%;">
+              <img src="./img/logo_semrush.svg" alt="semrush"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="why">
+    <div class="container">
+      <h2>Limitless possibilities for engaging your audience</h2>
+      <p>Snappa makes it easy to create any type of online graphic.</p>
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <div class="clearfix base">
+            <div class="img-box">
+              <img class="icn" src="./img/home_like.png" alt="home_like"/>
+            </div>
+            <div class="describe">
+              <h3>Social media</h3>
+              <p>Get noticed on social media and increase engagement with stunning graphics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="clearfix base">
+            <div class="img-box">
+              <img class="icn" src="./img/home_megaphone.png" alt="home_megaphone"/>
+            </div>
+            <div class="describe">
+              <h3>Ad campaigns</h3>
+              <p>Increase click through rates with highly converting graphics for various ad and social networks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="clearfix base">
+            <div class="img-box">
+              <img class="icn" src="./img/home_imac.png" alt="home_imac"/>
+            </div>
+            <div class="describe">
+              <h3>Blog posts</h3>
+              <p>Keep your readers engaged with captivating images that compliment your message.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="clearfix base">
+            <div class="img-box">
+              <img class="icn" src="./img/home_letter.png" alt="home_letter"/>
+            </div>
+            <div class="describe">
+              <h3>Email newsletters</h3>
+              <p>Build your brand with professional looking images for your email campaigns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="templates">
+    <div class="container title-base">
+      <h2>Hundreds of ready made templates</h2>
+      <p>Don't want to design from scratch? No problem! Just choose from our growing collection of beautiful templates to get started in seconds.</p>
+    </div>
+    <img src="./img/templates_jumbo.jpg" alt="templates_jumbo"/>
+  </div>
+  <div class="features">
+    <div class="container title-base">
+      <h2>Everything you need to create stunning graphics</h2>
+      <p>Snappa combines the best visual assets with a fully-featured graphic editor.</p>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_image2.png"/>
+          <h4>12,000+ Photos & patterns</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_pacman.png"/>
+          <h4>3,000+ Vectors & shapes</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_upload.png"/>
+          <h4>200+ Fonts & typefaces</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_upload.png"/>
+          <h4>Image uploads</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_wand.png"/>
+          <h4>Image effects</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_share.png"/>
+          <h4>Social integrations</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_save.png"/>
+          <h4>Saved designs</h4>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <img src="./img/feature_support.png"/>
+          <h4>Fast & friendly support</h4>
+        </div>
+      </div>
+      <button class="btn btn-info" id="featuresbtn" type="button">view all features</button>
+    </div>
+  </div>
+  <div class="beny">
+    <div class="container">
+      <h2>How Snappa improves your engagement</h2>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1 col-xs-12 text-center">
+          <img src="./img/beny_graph.png"/>
+        </div>
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <li>
+              <span class="glyphicon glyphicon-ok"></span>
+              <p>Having at least one image in your post leads to <strong> <ins>double the shares</ins></strong> on Facebook and Twitter.<a href="#">(source)</a></p>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-ok"></span>
+              <p>Adding images can boost your content credibility by <strong><ins>75%.</ins></strong><a href="#">(source)</a></p>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-ok"></span>
+              <p>Tweets with images receive <strong><ins>150%</ins></strong> more retweets.<a href="#">(source)</a></p>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-ok"></span>
+              <p>Articles with relevant images get <strong><ins>94%</ins></strong> more total views<a href="#">(source)</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial clearfix ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 user">
+          <img src="./img/olga-testimonial.jpg"/>
+          <h4>OLGA ANDRIENKO</h4>
+          <p>Communications & Social Media Lead @ SEMrush</p>
+          <!--
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <img src="./img/olga-testimonial.jpg"/>
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <h4>OLGA ANDRIENKO</h4>
+              <p>Communications & Social Media Lead @ SEMrush</p>
+            </div>
+          </div>-->
+        </div>
+        <div class="col-md-7 col-xs-12">
+          <div class="quote">
+            <p>"Snappa is a must have tool for the non-designers who publish content online. It's super easy to use and has a nice set of templates, and despite its simplicity offers unlimited possibilities for creative minds."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="container">
+      <h2>Over 300,000 images have been created using Snappa</h2>
+      <p>It's so easy, you have to try it to believe it!</p>
+      <button id="freebtn" data-toggle="modal" data-target="#sign-in" type="button">get started for free</button>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <span>&copy;2016 - Snappa.io</span>
+        <ul class="list-unstyled">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Knoeledge Base</a></li>
+          <li><a href="#">Terms&Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--log in-->
+<div class="modal fade" id="sign-in">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h2>Log in to Snappa</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="from-group mar">
+            <div class="input-group">
+              <label class="control-label sr-only" for="email">邮箱</label>
+              <span class="glyphicon glyphicon-envelope input-group-addon login-icon"></span>
+              <input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
+            </div>
+          </div>
+          <div class="from-group mar">
+            <div class="input-group">
+              <label class="control-label sr-only" for="pwd">密码</label>
+              <span class="glyphicon glyphicon-link input-group-addon login-icon"></span>
+              <input class="form-control" id="pwd" name="pwd" type="password" placeholder="Password"/>
+            </div>
+          </div>
+          <div class="form-group marall clearfix">
+            <a href="#">Forgot password?</a>
+            <button class="btn btn-info" type="button">Log in</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer modal-footer-bg">
+        <p>Don't hava a Snappa account yet?</p>
+        <a href="#">Create Account</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--sign in 还没改-->
+<div class="modal fade" id="log-in">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h2>Log in to Snappa</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="from-group mar">
+            <div class="input-group">
+              <label class="control-label sr-only" for="email">邮箱</label>
+              <span class="glyphicon glyphicon-envelope input-group-addon login-icon"></span>
+              <input class="form-control" id="email" name="email" type="email" placeholder="Email"/>
+            </div>
+          </div>
+          <div class="from-group mar">
+            <div class="input-group">
+              <label class="control-label sr-only" for="pwd">密码</label>
+              <span class="glyphicon glyphicon-link input-group-addon login-icon"></span>
+              <input class="form-control" id="pwd" name="pwd" type="password" placeholder="Password"/>
+            </div>
+          </div>
+          <div class="form-group marall clearfix">
+            <a href="#">Forgot password?</a>
+            <button class="btn btn-info" type="button">Log in</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer modal-footer-bg">
+        <p>Don't hava a Snappa account yet?</p>
+        <a href="#">Create Account</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
